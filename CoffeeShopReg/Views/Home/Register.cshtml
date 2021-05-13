@@ -6,11 +6,17 @@
 <h1>Please fill the form to register!</h1>
 <br />
 <form method="post" action="/home/AddUser">
-    First Name:   <input type="text" name="firstname" /><br /><br />
-    Last Name:    <input type="text" name="lastname" /><br /><br />
-    Email:        <input type="text" name="email" /><br /><br />
-    Phone Number: <input type="tel" name="phonenumber" /><br /><br />
-    Password:     <input type="password" name="password" /><br /><br />
+
+    First Name: <div> <input type="text" name="firstname" /><br /><br /></div>
+    Last Name:    <div> <input type="text" name="lastname" /><br /><br /></div>
+    Height:        <div><input type="text" name="height" /><br /><br /></div>
+    Weight:        <div><input type="text" name="weight" /><br /><br /></div>
+    Gender:      <div><input type="checkbox" name="gender" value="Male" /> Male <input type="checkbox" name="Female" value="Female" /> Female<br /><br /></div>
+    Email:        <div><input type="text" name="email" placeholder="'name@platform.com'" /><br /><br /></div>
+    Phone Number: <div> <input type="tel" name="phonenumber" placeholder="'(313)-XXX-XXXX'" /><br /><br /></div>
+    Username:      <div> <input type="text" name="username" placeholder="'User Name'" /><br /><br /></div>
+    Password:    <div>   <input type="password" name="psw" placeholder="'Password'" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br /><br /></div>
     <input type="submit" />
+
 </form>
 
