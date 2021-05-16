@@ -33,12 +33,15 @@ namespace CoffeeShopReg.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AddUser(string firstname, string lastname, string password, string email, string phonenumber, string gender, string username)
+        public IActionResult AddUser(string weight, string height, string firstname, string lastname, string password, string email, string phonenumber, string gender, string username)
         {
             ViewData["FirstName"] = firstname;
             ViewData["LastName"] = lastname;
+            ViewData["PhoneNumber"] = phonenumber;
             ViewData["UserName"] = username;
             ViewData["Gender"] = gender;
+            ViewData["Weight"] = weight;
+            ViewData["Height"] = height;
             return View();
         }
 
